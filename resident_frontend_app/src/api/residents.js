@@ -1,10 +1,9 @@
 import { apiRequest } from "./client";
 
 /**
- * NOTE: Backend OpenAPI currently exposes only "/" (health). The UI is wired
- * to conventional REST endpoints expected for this work item. Once the backend
- * implements these routes, the UI will work without changes (or with minor
- * path adjustments).
+ * Frontend API paths:
+ * - This UI calls `/api/residents` and `/api/auth/login`.
+ * - Backend must expose the same routes (either natively or via mounting routers under `/api`).
  */
 
 // PUBLIC_INTERFACE
